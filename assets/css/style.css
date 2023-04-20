@@ -1,0 +1,320 @@
+
+:root {
+    --back : #aed4fd6b;
+    --orange : rgba(255, 123, 0, 0.932);
+    --color3 : rgb(29, 29, 87);
+    --color4 : rgba(24, 23, 23, 0.418);
+    --background : rgba(10, 0, 0, 0.041);
+    --annuler : #a20707;
+    --green : green;
+}
+
+
+
+
+body {
+  background: var(--background)
+}
+
+
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+.form-container {
+    background-color: var(--back);
+    border-radius: 5px;
+    padding: 20px 60px;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+
+/*#transaction {
+  display: flex;
+} */
+
+#presenter-portefeuille {
+  background: var(--green);
+  border-radius: 6px;
+  padding: 15px;
+  /*display: flex;*/
+}
+
+#montant, #historique, #recharger {
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+#montant:hover, #historique:hover, #recharger:hover {
+  color: var(--color3);
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+/* .partie a {
+    color: #007bff;
+    text-align : center;
+    margin: 20px;
+    font-weight: 500;
+    font-size: 1.2em;
+    border: #007bff solid 1px;
+    border-radius: 23px;
+    padding: 5px 18px;
+    text-decoration: none;
+}  */
+
+/* 
+    .form-control {
+        background-color: #f8f9fa;
+    } 
+*/
+.bt {
+    background-color: #fff;
+    color: var(--orange);
+    border-color: var(--orange);
+    font-weight: bold;
+    padding: 8px 20px;
+    margin-top: 20px;
+}
+
+.bt-modifier {
+  background: var(--orange);
+  color: white;
+}
+
+.bt-supprimer {
+  background-color: var(--annuler);
+  color: white;
+}
+
+.voir-plus {
+  text-decoration: none;
+  color: var(--orange);
+  margin-right: 20px;
+  border: none;
+  background: none;
+  transition: 0.2s;
+}
+
+.voir-plus-form, .voir-offre {
+  display: inline;
+}
+
+.voir-plus:hover {
+  border: 1px solid var(--orange);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.bt:hover {
+    background-color: var(--orange);
+    color: #fff;
+}
+
+.bt-annuler {
+  background: var(--annuler);
+  color: white;
+  border-color: var(--annuler);
+  font-weight: bold;
+  /*padding: 8px 20px;
+  margin-top: 20px;*/
+}
+
+.orange{
+    color: var(--orange);
+}
+
+.bs-icon {
+    --bs-icon-size: .75rem;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--bs-icon-size);
+    width: calc(var(--bs-icon-size) * 2);
+    height: calc(var(--bs-icon-size) * 2);
+    color: var(--bs-primary);
+  }
+  
+  .bs-icon-xs {
+    --bs-icon-size: 1rem;
+    width: calc(var(--bs-icon-size) * 1.5);
+    height: calc(var(--bs-icon-size) * 1.5);
+  }
+  
+  .bs-icon-sm {
+    --bs-icon-size: 1rem;
+  }
+  
+  .bs-icon-md {
+    --bs-icon-size: 1.5rem;
+  }
+  
+  .bs-icon-lg {
+    --bs-icon-size: 2rem;
+  }
+  
+  .bs-icon-xl {
+    --bs-icon-size: 2.5rem;
+  }
+  
+  .bs-icon.bs-icon-primary {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+  }
+  
+  .bs-icon.bs-icon-primary-light {
+    color: var(--bs-primary);
+    background: rgba(var(--bs-primary-rgb), .2);
+  }
+  
+  .bs-icon.bs-icon-semi-white {
+    color: var(--bs-primary);
+    background: rgba(255, 255, 255, .5);
+  }
+  
+  .bs-icon.bs-icon-rounded {
+    border-radius: .5rem;
+  }
+  
+  .bs-icon.bs-icon-circle {
+    border-radius: 50%;
+  }
+  
+  .btnav {
+    margin-left: 15px;
+  }
+  
+  #portefeuille {
+    background: var(--green);
+    border: none;
+  }
+  
+  #portefeuille:hover {
+    background: #04bf04;
+  }
+  
+  #deconnexion {
+    /*background: #a20707;*/
+    transition: 0.3s;
+    border: none;
+  }
+
+  #deconnexion:hover {
+    background: var(--annuler);
+  }
+  
+
+  
+nav {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+.menu{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.61);
+  margin: 0px 8px;
+}
+
+.menu:hover {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+.titre {
+  text-align: center;
+}
+
+.titre p {
+  color: rgba(0, 0, 0, 0.596);
+}
+
+#modal_ajout {
+  background: var(--background);
+}
+
+#offre {
+  width: 85%;
+  display: none;
+}
+
+#demande {
+  /*max-width: 600px; */
+  background: rgba(0, 128, 0, 0.103);
+  border: 1px solid var(--green);
+  padding-top: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
+}
+
+#profil {
+  border: none;
+  background: transparent;
+  transition: 0.2s;
+}
+
+#profil:hover {
+  color: green;
+}
+
+.h1-size {
+  font-size: 1.1rem;
+}
+
+.div-vert {
+  background: rgba(0, 128, 0, 0.582);
+}
+
+.div-bleu {
+  background: rgba(0, 0, 255, 0.603);
+}
+
+.div-orange {
+  background: rgba(255, 166, 0, 0.596);
+}
+
+.count {
+  width: 80%;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0 auto;
+  color: white;
+}
+
+.admin-affichage {
+  margin-left: 20px;
+}
+
+#count {
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#div-utilisateurs, #div-clients, #div-livreurs {
+  display: none;
+}
+
+.para-inscription-connexion {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
